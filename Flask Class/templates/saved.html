@@ -1,0 +1,86 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Aug 25 14:23:57 2020
+
+@author: melissabadrudin
+"""
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Final Project</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+<body>
+	
+	
+	<div class = "content">
+		<h1> Car Price Prediction </h1>	
+		<form action = "/" method="POST">
+			<label> Year</label>
+			<input type="text" name="parameter 1" id="parameter_1">
+			<br>
+			<br>
+			<label> Km</label>
+			<input type="text" name="parameter 2" id="parameter_2">
+			<br>
+			<br>
+			<label> Number of Doors</label>
+			<input type="text" name="parameter 3" id="parameter_3">
+			<br>
+			<br>
+			<label> Number of Seats</label>
+			<input type="text" name="parameter 4" id="parameter_4">
+			<br>
+			<br>
+			<label> Transmission Number</label>
+			<input type="text" name="parameter 5" id="parameter_5">
+			<br>
+			<br> 
+			<label> Power</label>
+			<input type="text" name="parameter 6" id="parameter_6"> 
+			<br>
+			<br> 
+			<label> Cylinder</label>
+			<input type="text" name="parameter 7" id="parameter_7">  
+			<br>
+			<br> 
+			<label> Brand</label>
+			<input type="text" name="parameter 8" id="parameter_8"> 
+			<br>
+			<br>
+			<label> Fuel</label>
+			<input type="text" name="parameter 9" id="parameter_9"> 
+			<br>
+			<br>
+			<label> Transmission Type</label>
+			<input type="text" name="parameter 10" id="parameter_10"> 
+			<br>
+			<br>
+			<label> AC</label>
+			<input type="text" name="parameter 11" id="parameter_11"> 
+			<br>
+			<br>
+			<label> Condition</label>
+			<input type="text" name="parameter 12" id="parameter_12"> 
+			<br>
+			<br>
+			<input type="submit" value="Run Model">
+		</form>
+		
+	{% for prediction in predictions%}
+	
+	<h2> The result of your prediction is {{prediction}} </h2>
+	
+	{% endfor%}
+		
+	</div>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
