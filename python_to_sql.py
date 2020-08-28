@@ -6,7 +6,7 @@ df = pd.read_csv('/Users/melissabadrudin/Documents/GitHub/Final_project/stand_df
 
 
 ###### Pass the dataset to mySQL
-conda install pymysql
+#conda install pymysql
 
 #import the module
 from sqlalchemy import create_engine
